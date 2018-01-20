@@ -1,0 +1,7 @@
+rjQualityAssurance\.ui\.widgets module
+======================================
+
+.. automodule:: rjQualityAssurance.ui.widgets
+    :members:
+    :undoc-members:
+    :show-inheritance:

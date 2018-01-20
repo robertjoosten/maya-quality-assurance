@@ -1,0 +1,7 @@
+rjQualityAssurance\.checks\.skinning module
+===========================================
+
+.. automodule:: rjQualityAssurance.checks.skinning
+    :members:
+    :undoc-members:
+    :show-inheritance:

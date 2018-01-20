@@ -1,0 +1,202 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>rjQualityAssurance.checks package &#8212; rjQualityAssurance  &#39;&#39; documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     ' &#39;&#39;',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">rjQualityAssurance  &#39;&#39; documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="rjqualityassurance-checks-package">
+<h1>rjQualityAssurance.checks package<a class="headerlink" href="#rjqualityassurance-checks-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rjQualityAssurance.checks.animation.html">rjQualityAssurance.checks.animation module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rjQualityAssurance.checks.geometry.html">rjQualityAssurance.checks.geometry module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rjQualityAssurance.checks.modelling.html">rjQualityAssurance.checks.modelling module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rjQualityAssurance.checks.renderLayers.html">rjQualityAssurance.checks.renderLayers module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rjQualityAssurance.checks.renderStats.html">rjQualityAssurance.checks.renderStats module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rjQualityAssurance.checks.rigging.html">rjQualityAssurance.checks.rigging module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rjQualityAssurance.checks.scene.html">rjQualityAssurance.checks.scene module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rjQualityAssurance.checks.shaders.html">rjQualityAssurance.checks.shaders module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rjQualityAssurance.checks.skinning.html">rjQualityAssurance.checks.skinning module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rjQualityAssurance.checks.textures.html">rjQualityAssurance.checks.textures module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rjQualityAssurance.checks.uv.html">rjQualityAssurance.checks.uv module</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="module-rjQualityAssurance.checks">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-rjQualityAssurance.checks" title="Permalink to this headline">¶</a></h2>
+<p>New checks can be written in one of the sub modules of this package. 
+Writing new checks in existing modules they will automatically be picked
+up by the script. When adding a new sub module it is important the contents 
+of the sub module into this one.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">.animation</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>All checks are sorted in order of occurrence in the source code. This can be 
+used to make sure certain checks are after others.</p>
+<dl class="function">
+<dt id="rjQualityAssurance.checks.getChecks">
+<code class="descclassname">rjQualityAssurance.checks.</code><code class="descname">getChecks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rjQualityAssurance.checks.getChecks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all checks available in this module.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">All available error checks</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="rjQualityAssurance.checks.getChecksCategories">
+<code class="descclassname">rjQualityAssurance.checks.</code><code class="descname">getChecksCategories</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rjQualityAssurance.checks.getChecksCategories" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of all the categories used.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Category list</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="rjQualityAssurance.checks.getChecksFromCollection">
+<code class="descclassname">rjQualityAssurance.checks.</code><code class="descname">getChecksFromCollection</code><span class="sig-paren">(</span><em>collection</em><span class="sig-paren">)</span><a class="headerlink" href="#rjQualityAssurance.checks.getChecksFromCollection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all check based on a collections. The collections are stored in the
+collection module, or custom collections made by the user are saved to
+disk.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>collection</strong> (<em>str</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Ordered dictionary of checks</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">OrderedDict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="rjQualityAssurance.checks.getChecksSplitByCategory">
+<code class="descclassname">rjQualityAssurance.checks.</code><code class="descname">getChecksSplitByCategory</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rjQualityAssurance.checks.getChecksSplitByCategory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all of the checks and split them based on category as defined in the
+classes themselves.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">All error checks split by category</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">rjQualityAssurance.checks package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-rjQualityAssurance.checks">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/rjQualityAssurance.checks.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">rjQualityAssurance  &#39;&#39; documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, &#39;Robert Joosten&#39;.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.4.
+    </div>
+  </body>
+</html>

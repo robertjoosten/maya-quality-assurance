@@ -1,0 +1,7 @@
+rjQualityAssurance\.checks\.renderStats module
+==============================================
+
+.. automodule:: rjQualityAssurance.checks.renderStats
+    :members:
+    :undoc-members:
+    :show-inheritance:

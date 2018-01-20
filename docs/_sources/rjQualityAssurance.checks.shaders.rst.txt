@@ -1,0 +1,7 @@
+rjQualityAssurance\.checks\.shaders module
+==========================================
+
+.. automodule:: rjQualityAssurance.checks.shaders
+    :members:
+    :undoc-members:
+    :show-inheritance:

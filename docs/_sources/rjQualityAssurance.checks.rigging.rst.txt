@@ -1,0 +1,7 @@
+rjQualityAssurance\.checks\.rigging module
+==========================================
+
+.. automodule:: rjQualityAssurance.checks.rigging
+    :members:
+    :undoc-members:
+    :show-inheritance:

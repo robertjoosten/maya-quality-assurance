@@ -1,0 +1,22 @@
+rjQualityAssurance\.utils package
+=================================
+
+Submodules
+----------
+
+.. toctree::
+
+   rjQualityAssurance.utils.animation
+   rjQualityAssurance.utils.decorators
+   rjQualityAssurance.utils.path
+   rjQualityAssurance.utils.qa
+   rjQualityAssurance.utils.reference
+   rjQualityAssurance.utils.undo
+
+Module contents
+---------------
+
+.. automodule:: rjQualityAssurance.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:

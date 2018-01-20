@@ -1,0 +1,10 @@
+rjQualityAssurance\.collections package
+=======================================
+
+Module contents
+---------------
+
+.. automodule:: rjQualityAssurance.collections
+    :members:
+    :undoc-members:
+    :show-inheritance:

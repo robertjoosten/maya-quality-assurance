@@ -1,0 +1,148 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>rjQualityAssurance.checks.geometry module &#8212; rjQualityAssurance  &#39;&#39; documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     ' &#39;&#39;',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">rjQualityAssurance  &#39;&#39; documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-rjQualityAssurance.checks.geometry">
+<span id="rjqualityassurance-checks-geometry-module"></span><h1>rjQualityAssurance.checks.geometry module<a class="headerlink" href="#module-rjQualityAssurance.checks.geometry" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="rjQualityAssurance.checks.geometry.EmptyMesh">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.geometry.</code><code class="descname">EmptyMesh</code><a class="headerlink" href="#rjQualityAssurance.checks.geometry.EmptyMesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>Find meshes that have non-manifold edges and/or faces.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.geometry.LaminaFaces">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.geometry.</code><code class="descname">LaminaFaces</code><a class="headerlink" href="#rjQualityAssurance.checks.geometry.LaminaFaces" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>Find meshes that have lamina faces.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.geometry.LockedNormals">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.geometry.</code><code class="descname">LockedNormals</code><a class="headerlink" href="#rjQualityAssurance.checks.geometry.LockedNormals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>Find meshes that have locked normals. When fixing this error the normals
+will be unlocked. Make sure that this is what you really want, CAD files
+in general have locked normals, these normals are needed to present the
+mesh properly.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.geometry.NGonFaces">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.geometry.</code><code class="descname">NGonFaces</code><a class="headerlink" href="#rjQualityAssurance.checks.geometry.NGonFaces" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>Find meshes that have n-gon faces. When fixing this error the n-gon faces
+will be triangulated.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.geometry.OverlappingFaces">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.geometry.</code><code class="descname">OverlappingFaces</code><a class="headerlink" href="#rjQualityAssurance.checks.geometry.OverlappingFaces" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>Find meshes that have overlapping faces. When fixing this error the
+overlapping faces will be deleted.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.geometry.ZeroAreaFaces">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.geometry.</code><code class="descname">ZeroAreaFaces</code><a class="headerlink" href="#rjQualityAssurance.checks.geometry.ZeroAreaFaces" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>Find faces that have no surface area.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.geometry.ZeroEdgeLength">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.geometry.</code><code class="descname">ZeroEdgeLength</code><a class="headerlink" href="#rjQualityAssurance.checks.geometry.ZeroEdgeLength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>Find edges no length.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/rjQualityAssurance.checks.geometry.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">rjQualityAssurance  &#39;&#39; documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, &#39;Robert Joosten&#39;.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.4.
+    </div>
+  </body>
+</html>

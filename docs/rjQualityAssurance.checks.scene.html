@@ -1,0 +1,343 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>rjQualityAssurance.checks.scene module &#8212; rjQualityAssurance  &#39;&#39; documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     ' &#39;&#39;',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">rjQualityAssurance  &#39;&#39; documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-rjQualityAssurance.checks.scene">
+<span id="rjqualityassurance-checks-scene-module"></span><h1>rjQualityAssurance.checks.scene module<a class="headerlink" href="#module-rjQualityAssurance.checks.scene" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="rjQualityAssurance.checks.scene.DefaultName">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.scene.</code><code class="descname">DefaultName</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.DefaultName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>All transforms will be checked ti see if they start with a string that is
+considered to be a default name.</p>
+<dl class="attribute">
+<dt id="rjQualityAssurance.checks.scene.DefaultName.regex">
+<code class="descname">regex</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.DefaultName.regex" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Regex to find default names</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">_sre.SRE_Pattern</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.scene.EmptyDisplayLayer">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.scene.</code><code class="descname">EmptyDisplayLayer</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.EmptyDisplayLayer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>All display layers will be checked to see if they are empty. When fixing
+these nodes will be deleted.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.scene.EmptyNamespaces">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.scene.</code><code class="descname">EmptyNamespaces</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.EmptyNamespaces" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>All namespaces will be checked to see if they are empty. When fixing
+these namespaces will be deleted.</p>
+<dl class="attribute">
+<dt id="rjQualityAssurance.checks.scene.EmptyNamespaces.ignoreNamespaces">
+<code class="descname">ignoreNamespaces</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.EmptyNamespaces.ignoreNamespaces" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Namespaces to ignore</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.scene.EmptyRenderLayer">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.scene.</code><code class="descname">EmptyRenderLayer</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.EmptyRenderLayer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>All render layers will be checked to see if they are empty. When fixing
+these nodes will be deleted.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.scene.EmptyTransform">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.scene.</code><code class="descname">EmptyTransform</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.EmptyTransform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>All transform will be checked to see if they are empty. When fixing these
+nodes will be deleted.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.scene.HyperBookmarks">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.scene.</code><code class="descname">HyperBookmarks</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.HyperBookmarks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>All hyper bookmarks of the predefined node types will be added to the
+error list. When fixing these nodes will be deleted. To make sure no
+no connected nodes are deleted. The nodes will be locked before deletion.</p>
+<dl class="attribute">
+<dt id="rjQualityAssurance.checks.scene.HyperBookmarks.nodeIgnore">
+<code class="descname">nodeIgnore</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.HyperBookmarks.nodeIgnore" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of nodes to be ignored</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="rjQualityAssurance.checks.scene.HyperBookmarks.nodeTypes">
+<code class="descname">nodeTypes</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.HyperBookmarks.nodeTypes" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of node types that should be checked</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.scene.NamingConvention">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.scene.</code><code class="descname">NamingConvention</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.NamingConvention" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>All nodes part of the predefined node type list are being checked to see
+if they follow the lower case split with a “_” naming convention. When
+fixing the error nodes will be renamed to follow the correct naming
+convention.</p>
+<dl class="method">
+<dt id="rjQualityAssurance.checks.scene.NamingConvention.convertToNamingConvention">
+<code class="descname">convertToNamingConvention</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#rjQualityAssurance.checks.scene.NamingConvention.convertToNamingConvention" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert string to naming convention.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Name adjusted to naming convention</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="rjQualityAssurance.checks.scene.NamingConvention.nodeTypes">
+<code class="descname">nodeTypes</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.NamingConvention.nodeTypes" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of node types that should be checked</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="rjQualityAssurance.checks.scene.NamingConvention.splitOn">
+<code class="descname">splitOn</code><span class="sig-paren">(</span><em>split</em>, <em>func</em><span class="sig-paren">)</span><a class="headerlink" href="#rjQualityAssurance.checks.scene.NamingConvention.splitOn" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>split</strong> (<em>list</em>) – List of strings to split</li>
+<li><strong>func</strong> – Function to split string by</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Split sections</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="rjQualityAssurance.checks.scene.NamingConvention.splitOnCamelCase">
+<code class="descname">splitOnCamelCase</code><span class="sig-paren">(</span><em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#rjQualityAssurance.checks.scene.NamingConvention.splitOnCamelCase" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>n</strong> (<em>str</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">If n is upper case</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="rjQualityAssurance.checks.scene.NamingConvention.splitOnDigit">
+<code class="descname">splitOnDigit</code><span class="sig-paren">(</span><em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#rjQualityAssurance.checks.scene.NamingConvention.splitOnDigit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>n</strong> (<em>str</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">If n is a digit</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.scene.NonReferencedNamespace">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.scene.</code><code class="descname">NonReferencedNamespace</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.NonReferencedNamespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>All nodes will be checked to see if they have a non-referenced namespace.
+When fixing this the namespace will be removed from the node.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.scene.NotConnectedGroupID">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.scene.</code><code class="descname">NotConnectedGroupID</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.NotConnectedGroupID" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>All not connected intermediate nodes will be added to the error list.
+When fixing these nodes will be deleted.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.scene.NotConnectedIntermediateShape">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.scene.</code><code class="descname">NotConnectedIntermediateShape</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.NotConnectedIntermediateShape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>All not connected intermediate nodes will be added to the error list.
+When fixing these nodes will be deleted.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.scene.UniqueName">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.scene.</code><code class="descname">UniqueName</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.UniqueName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>All transforms will be checked to see if their name is unique. When fixing
+the not uniquely named transforms will be made unique.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rjQualityAssurance.checks.scene.UnknownNodes">
+<em class="property">class </em><code class="descclassname">rjQualityAssurance.checks.scene.</code><code class="descname">UnknownNodes</code><a class="headerlink" href="#rjQualityAssurance.checks.scene.UnknownNodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rjQualityAssurance.utils.qa.html#rjQualityAssurance.utils.qa.QualityAssurance" title="rjQualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">rjQualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>All unknown nodes will be added to the error list. When fixing these nodes
+will be deleted.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/rjQualityAssurance.checks.scene.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">rjQualityAssurance  &#39;&#39; documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, &#39;Robert Joosten&#39;.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.4.
+    </div>
+  </body>
+</html>

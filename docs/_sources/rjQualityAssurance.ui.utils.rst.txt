@@ -1,0 +1,7 @@
+rjQualityAssurance\.ui\.utils module
+====================================
+
+.. automodule:: rjQualityAssurance.ui.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:

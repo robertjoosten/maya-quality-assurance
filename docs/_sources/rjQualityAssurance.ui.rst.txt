@@ -1,0 +1,19 @@
+rjQualityAssurance\.ui package
+==============================
+
+Submodules
+----------
+
+.. toctree::
+
+   rjQualityAssurance.ui.utils
+   rjQualityAssurance.ui.widgets
+   rjQualityAssurance.ui.window
+
+Module contents
+---------------
+
+.. automodule:: rjQualityAssurance.ui
+    :members:
+    :undoc-members:
+    :show-inheritance:
