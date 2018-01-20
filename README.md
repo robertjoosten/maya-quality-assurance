@@ -1,5 +1,5 @@
 # rjSplineIK
-<img align="right" src="https://github.com/robertjoosten/rjQualityAssurance/raw/master/ui/icon/rjQualityAssurance.png">
+<img align="right" src="https://github.com/robertjoosten/rjQualityAssurance/blob/master/ui/icons/rjQualityAssurance.png">
 Quality assurance framework for Maya. Focused on many parts of a production pipeline, collections are created for animators, modelers, riggers and look-dev. 
 
 <p align="center"><img src="https://github.com/robertjoosten/rjQualityAssurance/raw/master/README.png"></p>
@@ -62,6 +62,7 @@ class TestCheck(QualityAssurance):
 
     def _fix(self, animCurve):
         cmds.delete(animCurve)
+```
             
 #### Meta Data
 * **self._name:** Name of the quality assurance check
