@@ -17,7 +17,8 @@ Usage
 Display UI
 ::
     import rjQualityAssurance.ui
-    rjQualityAssurance.ui.show()  
+    collection = "rigging"
+    rjQualityAssurance.ui.show(collection)  
     
 Adding Quality Assurance Checks
 ===============================
