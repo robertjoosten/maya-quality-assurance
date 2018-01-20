@@ -13,7 +13,7 @@ class QualityAssuranceWindow(utils.QWidget):
         self.setWindowIcon(
             utils.QIcon(utils.findIcon("rjQualityAssurance.png"))
         )
-        self.resize(450, 500)
+        self.resize(500, 500)
 
         # create layout
         layout = utils.QVBoxLayout(self)
