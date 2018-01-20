@@ -1,4 +1,4 @@
-# rjSplineIK
+# rjQualityAssurance
 <img align="right" src="https://github.com/robertjoosten/rjQualityAssurance/blob/master/ui/icons/rjQualityAssurance.png">
 Quality assurance framework for Maya. Focused on many parts of a production pipeline, collections are created for animators, modelers, riggers and look-dev. 
 
