@@ -1,0 +1,7 @@
+rjQualityAssurance\.utils\.skin module
+======================================
+
+.. automodule:: rjQualityAssurance.utils.skin
+    :members:
+    :undoc-members:
+    :show-inheritance:

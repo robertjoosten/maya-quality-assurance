@@ -1,0 +1,7 @@
+rjQualityAssurance\.utils\.api module
+=====================================
+
+.. automodule:: rjQualityAssurance.utils.api
+    :members:
+    :undoc-members:
+    :show-inheritance:

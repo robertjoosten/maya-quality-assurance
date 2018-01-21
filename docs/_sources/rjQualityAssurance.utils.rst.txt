@@ -7,10 +7,12 @@ Submodules
 .. toctree::
 
    rjQualityAssurance.utils.animation
+   rjQualityAssurance.utils.api
    rjQualityAssurance.utils.decorators
    rjQualityAssurance.utils.path
    rjQualityAssurance.utils.qa
    rjQualityAssurance.utils.reference
+   rjQualityAssurance.utils.skin
    rjQualityAssurance.utils.undo
 
 Module contents
