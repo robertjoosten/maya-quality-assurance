@@ -1,3 +1,4 @@
+import sys
 from maya import cmds, OpenMaya
 from . import decorators, undo, path
 
@@ -162,7 +163,7 @@ class QualityAssurance(object):
                     self._fix(error)
                     self._errors.remove(error)
                 except:
-                    continue
+                    print "Error:", sys.exc_info()[0]
 
     # ------------------------------------------------------------------------
 
