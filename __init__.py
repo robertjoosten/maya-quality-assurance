@@ -36,11 +36,11 @@ easily be added.
 
 Location
 --------
-All quality assurance checks live in the **rjQualityAssurance/checks** folder.
-New checks can be written in one of the sub modules in that folder. 
-Writing new checks in existing modules they will automatically be picked
-up by the script. When adding a new sub module it is important the contents 
-of the sub module into the following file: **rjQualityAssurance/checks/__init__.py**.
+All quality assurance checks are located in the **checks** folder. New checks 
+can be written in one of the sub modules of the **checks** folder. Writing 
+new checks in existing modules will automatically be picked up by the script. 
+When adding a new sub module it is important to import the contents of the 
+sub module into the **__init__.py** file in the **checks** folder.</p>
 
 .. code-block:: python
     

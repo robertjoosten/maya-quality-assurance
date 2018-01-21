@@ -137,11 +137,11 @@ print rjQualityAssurance.collections.getCollectionsCategories()</dd>
 easily be added.</p>
 <div class="section" id="location">
 <h4>Location<a class="headerlink" href="#location" title="Permalink to this headline">¶</a></h4>
-<p>All quality assurance checks live in the <strong>rjQualityAssurance/checks</strong> folder.
-New checks can be written in one of the sub modules in that folder. 
-Writing new checks in existing modules they will automatically be picked
-up by the script. When adding a new sub module it is important the contents 
-of the sub module into the following file: <strong>rjQualityAssurance/checks/__init__.py</strong>.</p>
+<p>All quality assurance checks are located in the <strong>checks</strong> folder. New checks 
+can be written in one of the sub modules of the <strong>checks</strong> folder. Writing 
+new checks in existing modules will automatically be picked up by the script. 
+When adding a new sub module it is important to import the contents of the 
+sub module into the <strong>__init__.py</strong> file in the <strong>checks</strong> folder.&lt;/p&gt;</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">.animation</span> <span class="kn">import</span> <span class="o">*</span>
 </pre></div>
 </div>
