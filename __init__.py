@@ -17,8 +17,16 @@ Usage
 Display UI
 ::
     import rjQualityAssurance.ui
-    collection = "rigging"
-    rjQualityAssurance.ui.show(collection)  
+    rjQualityAssurance.ui.show("rigging") 
+    
+The show function takes in a collection argument, if you work within one of 
+the specialties you can simply call the show function with the collection 
+you want to see by default. To see all available collections run the following 
+code.
+
+::
+    import rjQualityAssurance.collections
+    print rjQualityAssurance.collections.getCollectionsCategories()  
     
 Adding Quality Assurance Checks
 ===============================
@@ -43,8 +51,8 @@ used to make sure certain checks are after others.
 
 Collections
 -----------
-New collections can be added in the COLLECTIONS variable. Since this 
-COLLECTIONS variable is an OrderedDict, it will keep the order. A 
+New collections can be added in the **COLLECTIONS** variable. Since this 
+**COLLECTIONS** variable is an OrderedDict, it will keep the order. A 
 collection can be defined by who will be using it. Currently it is
 divided by different specialties. Each specialty contains a list of 
 categories that will be displayed. The category names link to the categories
@@ -102,7 +110,7 @@ Find and Fix Function
 
 Note
 =====
-Inspired by Martin Orlowski Quality GuAard, I've decided to write my own 
+Inspired by Martin Orlowski's **Quality GuAard**, I've decided to write my own 
 quality assurance framework and make it freely available. The project is
 available on `Git <https://github.com/robertjoosten/rjQualityAssurance>`_.  
 Free for anybody that wishes to contribute to this tool and add additional 

@@ -118,10 +118,18 @@ look-dev.</p>
 <h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
 <p>Display UI</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">rjQualityAssurance.ui</span>
-<span class="n">collection</span> <span class="o">=</span> <span class="s2">&quot;rigging&quot;</span>
-<span class="n">rjQualityAssurance</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">collection</span><span class="p">)</span>  
+<span class="n">rjQualityAssurance</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;rigging&quot;</span><span class="p">)</span> 
 </pre></div>
 </div>
+<p>The show function takes in a collection argument, if you work within one of 
+the specialties you can simply call the show function with the collection 
+you want to see by default. To see all available collections run the following 
+code.</p>
+<dl class="docutils">
+<dt>::</dt>
+<dd>import rjQualityAssurance.collections
+print rjQualityAssurance.collections.getCollectionsCategories()</dd>
+</dl>
 </div>
 <div class="section" id="adding-quality-assurance-checks">
 <h3>Adding Quality Assurance Checks<a class="headerlink" href="#adding-quality-assurance-checks" title="Permalink to this headline">¶</a></h3>
@@ -142,8 +150,8 @@ used to make sure certain checks are after others.</p>
 </div>
 <div class="section" id="collections">
 <h4>Collections<a class="headerlink" href="#collections" title="Permalink to this headline">¶</a></h4>
-<p>New collections can be added in the COLLECTIONS variable. Since this 
-COLLECTIONS variable is an OrderedDict, it will keep the order. A 
+<p>New collections can be added in the <strong>COLLECTIONS</strong> variable. Since this 
+<strong>COLLECTIONS</strong> variable is an OrderedDict, it will keep the order. A 
 collection can be defined by who will be using it. Currently it is
 divided by different specialties. Each specialty contains a list of 
 categories that will be displayed. The category names link to the categories
@@ -205,7 +213,7 @@ data in the <strong>__init__</strong> function.</p>
 </div>
 <div class="section" id="note">
 <h3>Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h3>
-<p>Inspired by Martin Orlowski Quality GuAard, I’ve decided to write my own 
+<p>Inspired by Martin Orlowski’s <strong>Quality GuAard</strong>, I’ve decided to write my own 
 quality assurance framework and make it freely available. The project is
 available on <a class="reference external" href="https://github.com/robertjoosten/rjQualityAssurance">Git</a>.  
 Free for anybody that wishes to contribute to this tool and add additional 
