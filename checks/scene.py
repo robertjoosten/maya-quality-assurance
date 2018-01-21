@@ -156,10 +156,6 @@ class NamingConvention(QualityAssurance):
         # split namespace
         name = path.baseName(name)
 
-        # handle delete on publish
-        #deleteOnPublish = name.find("DELETE_ON_PUBLISH") != -1
-        #name = name.replace("DELETE_ON_PUBLISH", "")
-
         # split into sections
         sections = name.split("_")
         sections = [s[0].upper() + s[1:] for s in sections if s]
@@ -169,9 +165,6 @@ class NamingConvention(QualityAssurance):
 
         # add delete on publish
         sections = [s.lower() for s in sections]
-
-        #if deleteOnPublish:
-        #    sections.extend(["DELETE", "ON", "PUBLISH"])
 
         return "_".join(sections)
 
