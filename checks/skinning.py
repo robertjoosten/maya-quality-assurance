@@ -123,7 +123,7 @@ class MaximumInfluences(QualityAssurance):
             
             # get weights
             for weight in skin.getWeightsApiGenerator(skinFn, infIds):
-                if len(weight.values()) > maxInfluences:
+                if len([w for w in weight.values() if w]) > maxInfluences:
                     yield skinCluster
                     break
 
@@ -174,7 +174,7 @@ class MaximumInfluences(QualityAssurance):
             
             # remove weights
             for i in removeIndices:
-                nWeights[i] = 0.0
+                nWeights[i] = 0
             
             # normalize weights
             if normalize == 1:
