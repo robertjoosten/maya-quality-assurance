@@ -1,7 +1,0 @@
-rjQualityAssurance\.checks\.textures module
-===========================================
-
-.. automodule:: rjQualityAssurance.checks.textures
-    :members:
-    :undoc-members:
-    :show-inheritance:

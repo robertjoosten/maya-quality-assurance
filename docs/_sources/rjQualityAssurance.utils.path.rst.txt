@@ -1,7 +1,0 @@
-rjQualityAssurance\.utils\.path module
-======================================
-
-.. automodule:: rjQualityAssurance.utils.path
-    :members:
-    :undoc-members:
-    :show-inheritance:

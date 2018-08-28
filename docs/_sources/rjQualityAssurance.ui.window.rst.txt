@@ -1,7 +1,0 @@
-rjQualityAssurance\.ui\.window module
-=====================================
-
-.. automodule:: rjQualityAssurance.ui.window
-    :members:
-    :undoc-members:
-    :show-inheritance:

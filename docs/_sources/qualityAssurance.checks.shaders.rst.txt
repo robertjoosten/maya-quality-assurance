@@ -1,0 +1,7 @@
+qualityAssurance\.checks\.shaders module
+========================================
+
+.. automodule:: qualityAssurance.checks.shaders
+    :members:
+    :undoc-members:
+    :show-inheritance:

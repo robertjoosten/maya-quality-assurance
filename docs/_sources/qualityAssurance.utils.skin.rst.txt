@@ -1,0 +1,7 @@
+qualityAssurance\.utils\.skin module
+====================================
+
+.. automodule:: qualityAssurance.utils.skin
+    :members:
+    :undoc-members:
+    :show-inheritance:

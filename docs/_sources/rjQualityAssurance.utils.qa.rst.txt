@@ -1,7 +1,0 @@
-rjQualityAssurance\.utils\.qa module
-====================================
-
-.. automodule:: rjQualityAssurance.utils.qa
-    :members:
-    :undoc-members:
-    :show-inheritance:

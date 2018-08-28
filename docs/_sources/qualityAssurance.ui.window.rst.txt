@@ -1,0 +1,7 @@
+qualityAssurance\.ui\.window module
+===================================
+
+.. automodule:: qualityAssurance.ui.window
+    :members:
+    :undoc-members:
+    :show-inheritance:

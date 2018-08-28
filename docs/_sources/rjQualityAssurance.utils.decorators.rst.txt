@@ -1,7 +1,0 @@
-rjQualityAssurance\.utils\.decorators module
-============================================
-
-.. automodule:: rjQualityAssurance.utils.decorators
-    :members:
-    :undoc-members:
-    :show-inheritance:

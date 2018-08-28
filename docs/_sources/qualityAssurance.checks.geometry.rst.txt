@@ -1,0 +1,7 @@
+qualityAssurance\.checks\.geometry module
+=========================================
+
+.. automodule:: qualityAssurance.checks.geometry
+    :members:
+    :undoc-members:
+    :show-inheritance:

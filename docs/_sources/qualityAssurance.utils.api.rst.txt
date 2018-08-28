@@ -1,0 +1,7 @@
+qualityAssurance\.utils\.api module
+===================================
+
+.. automodule:: qualityAssurance.utils.api
+    :members:
+    :undoc-members:
+    :show-inheritance:

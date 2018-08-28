@@ -1,0 +1,7 @@
+qualityAssurance\.install module
+================================
+
+.. automodule:: qualityAssurance.install
+    :members:
+    :undoc-members:
+    :show-inheritance:

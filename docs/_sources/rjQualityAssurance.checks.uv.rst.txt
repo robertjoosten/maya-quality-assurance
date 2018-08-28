@@ -1,7 +1,0 @@
-rjQualityAssurance\.checks\.uv module
-=====================================
-
-.. automodule:: rjQualityAssurance.checks.uv
-    :members:
-    :undoc-members:
-    :show-inheritance:

@@ -1,7 +1,0 @@
-rjQualityAssurance\.utils\.animation module
-===========================================
-
-.. automodule:: rjQualityAssurance.utils.animation
-    :members:
-    :undoc-members:
-    :show-inheritance:

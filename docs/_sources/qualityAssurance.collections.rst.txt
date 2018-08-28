@@ -1,0 +1,8 @@
+qualityAssurance\.collections package
+=====================================
+
+.. automodule:: qualityAssurance.collections
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

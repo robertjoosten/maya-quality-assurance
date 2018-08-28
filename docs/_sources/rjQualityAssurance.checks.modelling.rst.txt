@@ -1,7 +1,0 @@
-rjQualityAssurance\.checks\.modelling module
-============================================
-
-.. automodule:: rjQualityAssurance.checks.modelling
-    :members:
-    :undoc-members:
-    :show-inheritance:

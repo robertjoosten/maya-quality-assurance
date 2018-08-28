@@ -1,0 +1,259 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>qualityAssurance.ui.widgets module &#8212; qualityAssurance  &#39;&#39; documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     ' &#39;&#39;',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">qualityAssurance  &#39;&#39; documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-qualityAssurance.ui.widgets">
+<span id="qualityassurance-ui-widgets-module"></span><h1>qualityAssurance.ui.widgets module<a class="headerlink" href="#module-qualityAssurance.ui.widgets" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="qualityAssurance.ui.widgets.CategoryWidget">
+<em class="property">class </em><code class="descclassname">qualityAssurance.ui.widgets.</code><code class="descname">CategoryWidget</code><span class="sig-paren">(</span><em>parent</em>, <em>category</em><span class="sig-paren">)</span><a class="headerlink" href="#qualityAssurance.ui.widgets.CategoryWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PySide.QtGui.QWidget</span></code></p>
+<dl class="method">
+<dt id="qualityAssurance.ui.widgets.CategoryWidget.addWidget">
+<code class="descname">addWidget</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span><a class="headerlink" href="#qualityAssurance.ui.widgets.CategoryWidget.addWidget" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>widget</strong> – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="qualityAssurance.ui.widgets.CategoryWidget.staticMetaObject">
+<code class="descname">staticMetaObject</code><em class="property"> = &lt;PySide.QtCore.QMetaObject object&gt;</em><a class="headerlink" href="#qualityAssurance.ui.widgets.CategoryWidget.staticMetaObject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qualityAssurance.ui.widgets.CategoryWidget.switchVisibility">
+<code class="descname">switchVisibility</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qualityAssurance.ui.widgets.CategoryWidget.switchVisibility" title="Permalink to this definition">¶</a></dt>
+<dd><p>Toggle the visibilty of the widget and changing the icon of the of the
+collapse widget.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="qualityAssurance.ui.widgets.CheckWidget">
+<em class="property">class </em><code class="descclassname">qualityAssurance.ui.widgets.</code><code class="descname">CheckWidget</code><span class="sig-paren">(</span><em>parent</em>, <em>check</em>, <em>number</em><span class="sig-paren">)</span><a class="headerlink" href="#qualityAssurance.ui.widgets.CheckWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PySide.QtGui.QWidget</span></code></p>
+<dl class="method">
+<dt id="qualityAssurance.ui.widgets.CheckWidget.doFind">
+<code class="descname">doFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qualityAssurance.ui.widgets.CheckWidget.doFind" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run the find. The selection state is taken into account at this state.
+Once the find is ran, the refresh function will be called to update
+the ui.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qualityAssurance.ui.widgets.CheckWidget.doFix">
+<code class="descname">doFix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qualityAssurance.ui.widgets.CheckWidget.doFix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run the fix. Once the fix is ran, the refresh function will be called
+to update the ui.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qualityAssurance.ui.widgets.CheckWidget.refresh">
+<code class="descname">refresh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qualityAssurance.ui.widgets.CheckWidget.refresh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Refresh the widget based on the current status of the check. Urgency
+indicators will be set, status text changed, selectable and fix button
+enabled or disabled.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="qualityAssurance.ui.widgets.CheckWidget.staticMetaObject">
+<code class="descname">staticMetaObject</code><em class="property"> = &lt;PySide.QtCore.QMetaObject object&gt;</em><a class="headerlink" href="#qualityAssurance.ui.widgets.CheckWidget.staticMetaObject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="qualityAssurance.ui.widgets.CollectionsWidget">
+<em class="property">class </em><code class="descclassname">qualityAssurance.ui.widgets.</code><code class="descname">CollectionsWidget</code><span class="sig-paren">(</span><em>parent</em>, <em>collection</em><span class="sig-paren">)</span><a class="headerlink" href="#qualityAssurance.ui.widgets.CollectionsWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PySide.QtGui.QWidget</span></code></p>
+<dl class="attribute">
+<dt id="qualityAssurance.ui.widgets.CollectionsWidget.currentIndexChanged">
+<code class="descname">currentIndexChanged</code><em class="property"> = &lt;PySide.QtCore.Signal object&gt;</em><a class="headerlink" href="#qualityAssurance.ui.widgets.CollectionsWidget.currentIndexChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="qualityAssurance.ui.widgets.CollectionsWidget.staticMetaObject">
+<code class="descname">staticMetaObject</code><em class="property"> = &lt;PySide.QtCore.QMetaObject object&gt;</em><a class="headerlink" href="#qualityAssurance.ui.widgets.CollectionsWidget.staticMetaObject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qualityAssurance.ui.widgets.CollectionsWidget.trigger">
+<code class="descname">trigger</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qualityAssurance.ui.widgets.CollectionsWidget.trigger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trigger currentIndexChanged signal.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="qualityAssurance.ui.widgets.DropDownWidget">
+<em class="property">class </em><code class="descclassname">qualityAssurance.ui.widgets.</code><code class="descname">DropDownWidget</code><span class="sig-paren">(</span><em>parent</em>, <em>category</em><span class="sig-paren">)</span><a class="headerlink" href="#qualityAssurance.ui.widgets.DropDownWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PySide.QtGui.QWidget</span></code></p>
+<dl class="method">
+<dt id="qualityAssurance.ui.widgets.DropDownWidget.setIcon">
+<code class="descname">setIcon</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#qualityAssurance.ui.widgets.DropDownWidget.setIcon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set icon based on the state. The icon variables are stored in the
+COLLAPSE_ICONS variable.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>state</strong> (<em>bool</em>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="qualityAssurance.ui.widgets.DropDownWidget.staticMetaObject">
+<code class="descname">staticMetaObject</code><em class="property"> = &lt;PySide.QtCore.QMetaObject object&gt;</em><a class="headerlink" href="#qualityAssurance.ui.widgets.DropDownWidget.staticMetaObject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="qualityAssurance.ui.widgets.DropDownWidget.switchVisiblity">
+<code class="descname">switchVisiblity</code><em class="property"> = &lt;PySide.QtCore.Signal object&gt;</em><a class="headerlink" href="#qualityAssurance.ui.widgets.DropDownWidget.switchVisiblity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="qualityAssurance.ui.widgets.QualityAssuranceWidget">
+<em class="property">class </em><code class="descclassname">qualityAssurance.ui.widgets.</code><code class="descname">QualityAssuranceWidget</code><span class="sig-paren">(</span><em>parent</em>, <em>collection='Default'</em><span class="sig-paren">)</span><a class="headerlink" href="#qualityAssurance.ui.widgets.QualityAssuranceWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PySide.QtGui.QWidget</span></code></p>
+<dl class="method">
+<dt id="qualityAssurance.ui.widgets.QualityAssuranceWidget.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qualityAssurance.ui.widgets.QualityAssuranceWidget.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove all of the widgets from the layout apart from the last item
+which is a spacer item.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qualityAssurance.ui.widgets.QualityAssuranceWidget.doFindAll">
+<code class="descname">doFindAll</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qualityAssurance.ui.widgets.QualityAssuranceWidget.doFindAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loop over all widgets and see if the check button is enabled. If this
+is the case the check function can be ran.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qualityAssurance.ui.widgets.QualityAssuranceWidget.doFixAll">
+<code class="descname">doFixAll</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qualityAssurance.ui.widgets.QualityAssuranceWidget.doFixAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loop over all widgets and see if the fix button is enabled. If this
+is the case the fix function can be ran.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qualityAssurance.ui.widgets.QualityAssuranceWidget.refresh">
+<code class="descname">refresh</code><span class="sig-paren">(</span><em>collection</em><span class="sig-paren">)</span><a class="headerlink" href="#qualityAssurance.ui.widgets.QualityAssuranceWidget.refresh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear the entire UI and populate it with the checks that are part of
+the collection parsed in as an argument.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>collection</strong> (<em>str</em>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="qualityAssurance.ui.widgets.QualityAssuranceWidget.staticMetaObject">
+<code class="descname">staticMetaObject</code><em class="property"> = &lt;PySide.QtCore.QMetaObject object&gt;</em><a class="headerlink" href="#qualityAssurance.ui.widgets.QualityAssuranceWidget.staticMetaObject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/qualityAssurance.ui.widgets.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">qualityAssurance  &#39;&#39; documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, &#39;Robert Joosten&#39;.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.4.
+    </div>
+  </body>
+</html>

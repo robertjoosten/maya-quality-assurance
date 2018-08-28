@@ -1,0 +1,7 @@
+qualityAssurance\.checks\.skinning module
+=========================================
+
+.. automodule:: qualityAssurance.checks.skinning
+    :members:
+    :undoc-members:
+    :show-inheritance:

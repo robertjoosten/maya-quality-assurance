@@ -1,0 +1,17 @@
+qualityAssurance\.ui package
+============================
+
+.. automodule:: qualityAssurance.ui
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+
+   qualityAssurance.ui.utils
+   qualityAssurance.ui.widgets
+   qualityAssurance.ui.window
+

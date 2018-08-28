@@ -1,0 +1,7 @@
+qualityAssurance\.checks\.rigging module
+========================================
+
+.. automodule:: qualityAssurance.checks.rigging
+    :members:
+    :undoc-members:
+    :show-inheritance:

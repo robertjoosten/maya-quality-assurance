@@ -1,0 +1,7 @@
+qualityAssurance\.utils\.reference module
+=========================================
+
+.. automodule:: qualityAssurance.utils.reference
+    :members:
+    :undoc-members:
+    :show-inheritance:

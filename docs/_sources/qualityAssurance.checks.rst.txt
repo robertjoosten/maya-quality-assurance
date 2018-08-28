@@ -1,0 +1,25 @@
+qualityAssurance\.checks package
+================================
+
+.. automodule:: qualityAssurance.checks
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+
+   qualityAssurance.checks.animation
+   qualityAssurance.checks.geometry
+   qualityAssurance.checks.modelling
+   qualityAssurance.checks.renderLayers
+   qualityAssurance.checks.renderStats
+   qualityAssurance.checks.rigging
+   qualityAssurance.checks.scene
+   qualityAssurance.checks.shaders
+   qualityAssurance.checks.skinning
+   qualityAssurance.checks.textures
+   qualityAssurance.checks.uv
+

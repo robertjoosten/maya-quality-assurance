@@ -1,0 +1,25 @@
+qualityAssurance package
+========================
+
+.. automodule:: qualityAssurance
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+
+    qualityAssurance.checks
+    qualityAssurance.collections
+    qualityAssurance.ui
+    qualityAssurance.utils
+
+Submodules
+----------
+
+.. toctree::
+
+   qualityAssurance.install
+

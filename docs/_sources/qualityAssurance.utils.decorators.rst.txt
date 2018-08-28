@@ -1,0 +1,7 @@
+qualityAssurance\.utils\.decorators module
+==========================================
+
+.. automodule:: qualityAssurance.utils.decorators
+    :members:
+    :undoc-members:
+    :show-inheritance:

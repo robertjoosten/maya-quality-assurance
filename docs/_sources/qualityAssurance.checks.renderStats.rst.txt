@@ -1,0 +1,7 @@
+qualityAssurance\.checks\.renderStats module
+============================================
+
+.. automodule:: qualityAssurance.checks.renderStats
+    :members:
+    :undoc-members:
+    :show-inheritance:

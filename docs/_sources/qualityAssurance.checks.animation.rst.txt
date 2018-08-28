@@ -1,0 +1,7 @@
+qualityAssurance\.checks\.animation module
+==========================================
+
+.. automodule:: qualityAssurance.checks.animation
+    :members:
+    :undoc-members:
+    :show-inheritance:

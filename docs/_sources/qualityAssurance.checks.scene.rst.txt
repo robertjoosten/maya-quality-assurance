@@ -1,0 +1,7 @@
+qualityAssurance\.checks\.scene module
+======================================
+
+.. automodule:: qualityAssurance.checks.scene
+    :members:
+    :undoc-members:
+    :show-inheritance:

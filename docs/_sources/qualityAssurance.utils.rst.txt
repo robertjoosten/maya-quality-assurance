@@ -1,0 +1,22 @@
+qualityAssurance\.utils package
+===============================
+
+.. automodule:: qualityAssurance.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+
+   qualityAssurance.utils.animation
+   qualityAssurance.utils.api
+   qualityAssurance.utils.decorators
+   qualityAssurance.utils.path
+   qualityAssurance.utils.qa
+   qualityAssurance.utils.reference
+   qualityAssurance.utils.skin
+   qualityAssurance.utils.undo
+

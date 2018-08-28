@@ -1,7 +1,0 @@
-rjQualityAssurance\.utils\.reference module
-===========================================
-
-.. automodule:: rjQualityAssurance.utils.reference
-    :members:
-    :undoc-members:
-    :show-inheritance:

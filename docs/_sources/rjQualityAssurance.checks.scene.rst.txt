@@ -1,7 +1,0 @@
-rjQualityAssurance\.checks\.scene module
-========================================
-
-.. automodule:: rjQualityAssurance.checks.scene
-    :members:
-    :undoc-members:
-    :show-inheritance:

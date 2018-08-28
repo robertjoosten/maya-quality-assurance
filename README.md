@@ -1,26 +1,29 @@
-# rjQualityAssurance
-<img align="right" src="https://github.com/robertjoosten/rjQualityAssurance/blob/master/ui/icons/rjQualityAssurance.png">
+# maya-quality-assurance
+<p align="right"><img src="icons/QA_icon.png?raw=true"></p>
 Quality assurance framework for Maya. Focused on many parts of a production pipeline, collections are created for animators, modelers, riggers and look-dev. 
 
-<p align="center"><img src="https://github.com/robertjoosten/rjQualityAssurance/raw/master/README.png"></p>
+<p align="center"><img src="docs/_images/qualityAssuranceExample.png?raw=true"></p>
 
 ## Installation
-Copy the **rjQualityAssurance** folder to your Maya scripts directory:
-> C:\Users\<USER>\Documents\maya\scripts
+* Extract the content of the .rar file anywhere on disk.
+* Drag the qualityAssurance.mel file in Maya to permanently install the script.
 
 ## Usage
+A button on the MiscTools shelf will be created that will allow easy access to the ui, this way the user doesn't need to worry about any of the code.
+If user wishes to not use the shelf button the following commands can be used.
+
 Display UI:
 
 ```python
-import rjQualityAssurance.ui
-rjQualityAssurance.ui.show("rigging") 
+import qualityAssurance.ui
+qualityAssurance.ui.show("rigging")
 ```
 
 The show function takes in a collection argument, if you work within one of the specialties you can simply call the show function with the collection you want to see by default. To see all available collections run the following code.
 
 ```python
-import rjQualityAssurance.collections
-print rjQualityAssurance.collections.getCollectionsCategories()  
+import qualityAssurance.collections
+print qualityAssurance.collections.getCollectionsCategories()
 ```
 
 ## Adding Quality Assurance Checks
@@ -83,4 +86,4 @@ class TestCheck(QualityAssurance):
 * The **_fix** function fixes one of these errors at a time. In the example above we could find multiple animation curves, but the fix only deletes one animation curve at a time.
 
 ## Note
-Inspired by Martin Orlowski's **Quality GuAard**, I've decided to write my own quality assurance framework and make it freely available. The project is available on [Git](https://github.com/robertjoosten/rjQualityAssurance). Free for anybody that wishes to contribute to this tool and add additional quality assurance checks. 
+Inspired by Martin Orlowski's **Quality GuAard**, I've decided to write my own quality assurance framework and make it freely available. The project is available on [Git](https://github.com/robertjoosten/maya-quality-assurance). Free for anybody that wishes to contribute to this tool and add additional quality assurance checks.

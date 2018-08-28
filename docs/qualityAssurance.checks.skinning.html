@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>qualityAssurance &#8212; qualityAssurance  &#39;&#39; documentation</title>
+    <title>qualityAssurance.checks.skinning module &#8212; qualityAssurance  &#39;&#39; documentation</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -43,48 +43,28 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="qualityassurance">
-<h1>qualityAssurance<a class="headerlink" href="#qualityassurance" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="qualityAssurance.html">qualityAssurance package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="qualityAssurance.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="qualityAssurance.html#usage">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="qualityAssurance.html#adding-quality-assurance-checks">Adding Quality Assurance Checks</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="qualityAssurance.html#location">Location</a></li>
-<li class="toctree-l3"><a class="reference internal" href="qualityAssurance.html#collections">Collections</a></li>
-<li class="toctree-l3"><a class="reference internal" href="qualityAssurance.html#sub-classing">Sub Classing</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="qualityAssurance.html#meta-data">Meta Data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="qualityAssurance.html#find-and-fix-function">Find and Fix Function</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="qualityAssurance.html#note">Note</a></li>
-<li class="toctree-l2"><a class="reference internal" href="qualityAssurance.html#subpackages">Subpackages</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="qualityAssurance.checks.html">qualityAssurance.checks package</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="qualityAssurance.checks.html#submodules">Submodules</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="qualityAssurance.collections.html">qualityAssurance.collections package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="qualityAssurance.ui.html">qualityAssurance.ui package</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="qualityAssurance.ui.html#submodules">Submodules</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="qualityAssurance.utils.html">qualityAssurance.utils package</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="qualityAssurance.utils.html#submodules">Submodules</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="qualityAssurance.html#submodules">Submodules</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="qualityAssurance.install.html">qualityAssurance.install module</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
+  <div class="section" id="module-qualityAssurance.checks.skinning">
+<span id="qualityassurance-checks-skinning-module"></span><h1>qualityAssurance.checks.skinning module<a class="headerlink" href="#module-qualityAssurance.checks.skinning" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="qualityAssurance.checks.skinning.MaximumInfluences">
+<em class="property">class </em><code class="descclassname">qualityAssurance.checks.skinning.</code><code class="descname">MaximumInfluences</code><a class="headerlink" href="#qualityAssurance.checks.skinning.MaximumInfluences" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="qualityAssurance.utils.qa.html#qualityAssurance.utils.qa.QualityAssurance" title="qualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">qualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>Skin clusters will be checked to see if they contain vertices that exceed
+the maximum influences. When fixing this error new skin weights will be 
+applied by removing and normalizing the lowest influences that are 
+exceeding the maximum amount.
+cluster.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="qualityAssurance.checks.skinning.UnusedInfluences">
+<em class="property">class </em><code class="descclassname">qualityAssurance.checks.skinning.</code><code class="descname">UnusedInfluences</code><a class="headerlink" href="#qualityAssurance.checks.skinning.UnusedInfluences" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="qualityAssurance.utils.qa.html#qualityAssurance.utils.qa.QualityAssurance" title="qualityAssurance.utils.qa.QualityAssurance"><code class="xref py py-class docutils literal"><span class="pre">qualityAssurance.utils.qa.QualityAssurance</span></code></a></p>
+<p>Skin clusters will be checked to see if they contain unused influences.
+When fixing this error the unused influences will be removed from the skin
+cluster.</p>
+</dd></dl>
+
 </div>
 
 
@@ -96,7 +76,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/modules.rst.txt"
+      <li><a href="_sources/qualityAssurance.checks.skinning.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>

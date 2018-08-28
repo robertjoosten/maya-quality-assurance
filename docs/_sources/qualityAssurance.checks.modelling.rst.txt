@@ -1,0 +1,7 @@
+qualityAssurance\.checks\.modelling module
+==========================================
+
+.. automodule:: qualityAssurance.checks.modelling
+    :members:
+    :undoc-members:
+    :show-inheritance:

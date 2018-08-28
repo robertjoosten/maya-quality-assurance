@@ -1,0 +1,7 @@
+qualityAssurance\.utils\.qa module
+==================================
+
+.. automodule:: qualityAssurance.utils.qa
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+qualityAssurance\.ui\.widgets module
+====================================
+
+.. automodule:: qualityAssurance.ui.widgets
+    :members:
+    :undoc-members:
+    :show-inheritance:
