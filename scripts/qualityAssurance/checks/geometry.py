@@ -214,21 +214,20 @@ class OverlappingFaces(QualityAssurance):
             allPoints = []
             allIndices = []
 
-            print('mesh---------------', path)
             # loop faces
             while not faceIter.isDone():
                 # get world space positions
                 points = OpenMaya.MPointArray()
                 faceIter.getPoints(points, OpenMaya.MSpace.kWorld)
 
-                # every face returns 4 points, for quad
+                # faceIter.getPoints returns points per face.
+                # 3 points for a tri, 4 points for a quad, 4+ for ngon
+                # but ideally we check by triangle. a quad is made out 2 triangles.
+                # if a face overlaps with a tri, it wont be found for now.
 
                 # sort points
                 points = [
-                    # sorted(  # dont sort xyz coords? you distort space!
                     [
-                        # created cueb w overlap face
-                        # 0.50000012 vs 0.5, round 8 is not good enough
                         round(points[i][0], 5),
                         round(points[i][1], 5),
                         round(points[i][2], 5)
@@ -237,8 +236,7 @@ class OverlappingFaces(QualityAssurance):
                 ]
 
                 # store points and indices
-                allPoints.append(str(sorted(points))) # why sort them
-                # allPoints.append(points)  # why string, is slow to comapre
+                allPoints.append(str(sorted(points)))  # todo optimise, remove string comparison
                 allIndices.append(faceIter.index())
 
                 faceIter.next()
@@ -247,9 +245,6 @@ class OverlappingFaces(QualityAssurance):
             # find matching faces
             seen = set()
             for i, p in zip(allIndices, allPoints):
-
-                print(i, p)
-                # p = str(p) # for now str compare
                 if p not in seen:
                     seen.add(p)
                     continue
